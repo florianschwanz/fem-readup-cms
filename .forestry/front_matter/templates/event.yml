@@ -1,4 +1,67 @@
 ---
 label: Event
 hide_body: true
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: description
+  type: text
+  config:
+    required: false
+  label: Description
+- name: start_date
+  type: text
+  config:
+    required: false
+  label: Start Date
+- name: end_date
+  type: text
+  config:
+    required: false
+  label: End Date
+- name: place
+  type: text
+  config:
+    required: false
+  label: Place
+- name: category
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - Lesung
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Category
+- name: contact
+  type: field_group
+  config: {}
+  fields:
+  - name: contact_person
+    type: text
+    config:
+      required: false
+    label: Contact Person
+  - name: url
+    type: text
+    config:
+      required: false
+    label: URL
+  - name: phone
+    type: text
+    config:
+      required: false
+    label: Phone
+  - name: mail
+    type: text
+    config:
+      required: false
+    label: Mail
+  label: Contact
