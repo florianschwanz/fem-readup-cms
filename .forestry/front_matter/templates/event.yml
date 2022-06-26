@@ -7,11 +7,6 @@ fields:
   config:
     required: false
   label: Title
-- name: description
-  type: text
-  config:
-    required: false
-  label: Description
 - name: image
   type: file
   config:
